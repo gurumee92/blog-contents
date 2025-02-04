@@ -4,25 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "a4a964845f1492a4",
+        "id": "3f1e5a98c975c818",
         "type": "tabs",
         "children": [
           {
-            "id": "4e19027455506db2",
+            "id": "b287743a7600b3b3",
             "type": "leaf",
             "state": {
-              "type": "kanban",
+              "type": "markdown",
               "state": {
-                "file": "주간 칸반/25년/1월/4주차.md",
-                "kanbanViewState": {
-                  "kanban-plugin": "board",
-                  "list-collapse": [
-                    false
-                  ]
-                }
+                "file": "프로젝트/LearnProgrammingBasicsWithCsharp/index.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-trello",
-              "title": "4주차"
+              "icon": "lucide-file",
+              "title": "index"
             }
           }
         ]
@@ -44,7 +40,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "파일 탐색기"
@@ -176,23 +173,23 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:퀵 스위처 열기": false,
+      "switcher:빠른 전환기 열기": false,
+      "daily-notes:오늘의 일일 노트 열기": false,
       "graph:그래프 뷰 열기": false,
       "canvas:새 캔버스 만들기": false,
-      "daily-notes:오늘의 데일리 노트 열기": false,
       "templates:템플릿 삽입": false,
       "command-palette:명령어 팔레트 열기": false,
       "obsidian-git:Open Git source control": false,
       "obsidian-kanban:새 보드 만들기": false
     }
   },
-  "active": "4e19027455506db2",
+  "active": "b287743a7600b3b3",
   "lastOpenFiles": [
+    "주간 칸반/25년/2월/1주차.md",
+    "주간 칸반/25년/1월/4주차.md",
     "프로젝트/LearnProgrammingBasicsWithCsharp/index.md",
     "프로젝트/index.md",
-    "주간 칸반/25년/2월/1주차.md",
     "옵시디언 사용하기/옵시디언 블로그 검색 엔진에 노출시키기 📅 2025-02-09 🔺.md",
-    "주간 칸반/25년/1월/4주차.md",
     "주간 칸반/25년/2월",
     "스터디/스프링 부트를 활용한 마이크로 서비스 개발/스프링 부트 msa 2일차 (챕터 2) 📅 2025-01-22 🔽.md",
     "스터디/Practical VIM/Practical VIM 2일차 (팁 4-6) 📅 2025-01-22 🔽.md",
