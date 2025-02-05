@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "프로젝트/LearnProgrammingBasicsWithCsharp/index.md",
+                "file": "프로젝트/LearnProgrammingBasicsWithCsharp/01_HelloWorldWithCsharp.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "01_HelloWorldWithCsharp"
             }
           }
         ]
@@ -185,9 +185,11 @@
   },
   "active": "b287743a7600b3b3",
   "lastOpenFiles": [
+    "프로젝트/LearnProgrammingBasicsWithCsharp/index.md",
+    "프로젝트/LearnProgrammingBasicsWithCsharp/01_HelloWorldWithCsharp.md",
+    "프로젝트/LearnProgrammingBasicsWithCsharp/HelloWorld",
     "주간 칸반/25년/2월/1주차.md",
     "주간 칸반/25년/1월/4주차.md",
-    "프로젝트/LearnProgrammingBasicsWithCsharp/index.md",
     "프로젝트/index.md",
     "옵시디언 사용하기/옵시디언 블로그 검색 엔진에 노출시키기 📅 2025-02-09 🔺.md",
     "주간 칸반/25년/2월",
@@ -221,7 +223,6 @@
     "옵시디언 사용하기/이미지/옵시디언 노트로 개인 블로그 구축하기/1-3.png",
     "옵시디언 사용하기/이미지/옵시디언 노트로 개인 블로그 구축하기/1-25.png",
     "옵시디언 사용하기/이미지",
-    "옵시디언 사용하기/옵시디언 노트로 개인 블로그 구축하기",
     "주간 칸반/24년/12월/2주차.md",
     "주간 칸반/24년/12월/4주차.md",
     "주간 칸반/24년/12월/1주차.md",
@@ -229,7 +230,6 @@
     "이름 없는 보드.md",
     "주간 칸반/11월 4주차.md",
     "프로젝트/옵시디언을 블로그로 만들기/index.md",
-    "주간 칸반/index.md",
-    "무제 파일.md"
+    "주간 칸반/index.md"
   ]
 }
