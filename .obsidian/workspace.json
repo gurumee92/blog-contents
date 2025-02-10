@@ -11,18 +11,14 @@
             "id": "aa721a127d4a1c22",
             "type": "leaf",
             "state": {
-              "type": "kanban",
+              "type": "markdown",
               "state": {
-                "file": "주간 칸반/25년/2월/2주차.md",
-                "kanbanViewState": {
-                  "kanban-plugin": "board",
-                  "list-collapse": [
-                    false
-                  ]
-                }
+                "file": "프로젝트/LearnProgrammingBasicsWithCsharp/01_HelloWorldWithCsharp.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-trello",
-              "title": "2주차"
+              "icon": "lucide-file",
+              "title": "01_HelloWorldWithCsharp"
             }
           }
         ]
@@ -189,9 +185,9 @@
   },
   "active": "aa721a127d4a1c22",
   "lastOpenFiles": [
+    "주간 칸반/25년/2월/2주차.md",
     "프로젝트/LearnProgrammingBasicsWithCsharp/01_HelloWorldWithCsharp.md",
     "스터디/Practical VIM/Practical VIM Days 4 TIP 10-12 📅 2025-02-10 🔽.md",
-    "주간 칸반/25년/2월/2주차.md",
     "옵시디언 사용하기/옵시디언 블로그 검색 엔진에 노출시키기 📅 2025-02-16 🔺.md",
     "주간 칸반/25년/2월/1주차.md",
     "스터디/Practical VIM/Practical VIM Days 3 TIP 7-9 📅 2025-02-06 🔽.md",
