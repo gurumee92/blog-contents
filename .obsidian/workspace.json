@@ -11,13 +11,14 @@
             "id": "aa721a127d4a1c22",
             "type": "leaf",
             "state": {
-              "type": "diff-view",
+              "type": "markdown",
               "state": {
-                "file": "스터디/Practical VIM/Practical VIM Days 4 TIP 10-12 📅 2025-02-10 🔽.md",
-                "staged": false
+                "file": "프로젝트/LearnProgrammingBasicsWithCsharp/01_HelloWorldWithCsharp.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "git-pull-request",
-              "title": "Diff View (Practical VIM Days 4 TIP 10-12 📅 2025-02-10 🔽)"
+              "icon": "lucide-file",
+              "title": "01_HelloWorldWithCsharp"
             }
           }
         ]

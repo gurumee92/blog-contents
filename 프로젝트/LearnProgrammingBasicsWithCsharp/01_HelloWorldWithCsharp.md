@@ -41,82 +41,89 @@ C# 개발 환경은 일반적으로 Windows 운영체제에서 **Visual Studio**
 
 IDE로 젯브레인 사에 Rider가 있지만, 이 문서에서는 **Visual Studio Code(VS Code)**를 이용하여 진행하도록 하겠습니다.
 
-### 1. .NET SDK 설치
+### .NET SDK 설치
 먼저 C#을 설치하기 위해서는 `.NET SDK`가 필요합니다. .NET SDK는 C# 프로그램을 컴파일하고 실행할 수 있도록 지원하는 개발 도구입니다.
 
 #### Windows
+Windows에서 `winget` 패키지 관리자를 사용하여 .NET SDK를 설치할 수 있습니다. 터미널(명령 프롬프트 또는 PowerShell)에서 다음 명령어를 입력하세요:
+    
+```
+winget install Microsoft.DotNet.SDK.9
+```
+    
+또는 [공식 다운로드 페이지](https://dotnet.microsoft.com/download)에서 설치 파일을 내려받아 수동으로 설치할 수 있습니다. 설치 후, 다음 명령어를 입력하여 정상적으로 설치되었는지 확인합니다:
+    
+```
+dotnet --version
+```
 
-1. Windows에서 `winget` 패키지 관리자를 사용하여 .NET SDK를 설치할 수 있습니다. 터미널(명령 프롬프트 또는 PowerShell)에서 다음 명령어를 입력하세요:
-    
-    ```
-    winget install Microsoft.DotNet.SDK.9
-    ```
-    
-2. 설치 후, 다음 명령어를 입력하여 정상적으로 설치되었는지 확인합니다:
-    
-    ```
-    dotnet --version
-    ```
-    
+
 
 #### macOS
-
-4. 홈브루(Homebrew)가 설치되어 있다면, 터미널에서 다음 명령어를 입력하여 설치할 수 있습니다:
+홈브루(Homebrew)가 설치되어 있다면, 터미널에서 다음 명령어를 입력하여 설치할 수 있습니다:
     
-    ```
-    brew install dotnet-sdk
-    ```
+```
+brew install dotnet-sdk
+```
     
-    또는 [공식 다운로드 페이지](https://dotnet.microsoft.com/download)에서 설치 파일을 내려받아 수동으로 설치할 수 있습니다.
+또는 [공식 다운로드 페이지](https://dotnet.microsoft.com/download)에서 설치 파일을 내려받아 수동으로 설치할 수 있습니다. 설치 완료 후, 터미널에서 다음 명령어를 입력하여 정상 설치 여부를 확인합니다:
     
-5. 설치 완료 후, 터미널에서 다음 명령어를 입력하여 정상 설치 여부를 확인합니다:
-    
-    ```
-    dotnet --version
-    ```
+```
+dotnet --version
+```
     
 
 #### Linux
 
-6. 배포판에 따라 다음과 같은 명령어를 사용하여 설치할 수 있습니다:
+배포판에 따라 다음과 같은 명령어를 사용하여 설치할 수 있습니다:
     
-    - Ubuntu/Debian:
+- Ubuntu/Debian:
         
-        ```
-        sudo apt update
-        sudo apt install dotnet-sdk-9.0
-        ```
+	```
+	sudo apt update
+	sudo apt install dotnet-sdk-9.0
+	```
+	
+- Fedora:
         
-    - Fedora:
+	```
+	sudo dnf install dotnet-sdk-8.0
+	```
         
-        ```
-        sudo dnf install dotnet-sdk-8.0
-        ```
+- Arch Linux:
         
-    - Arch Linux:
-        
-        ```
-        sudo pacman -S dotnet-sdk
-        ```
-        
-7. 설치 완료 후, 다음 명령어로 확인합니다:
-    
-    ```
-    dotnet --version
-    ```
-    
+	```
+	sudo pacman -S dotnet-sdk
+	```
 
-### 2. Visual Studio Code(VS Code) 설치 및 설정
+설치 완료 후, 다음 명령어로 확인합니다:
+    
+```
+dotnet --version
+```
+
+> [!tip]
+> 리눅스 버전에 따라서, 기본 패키지에 `dotnet-sdk`가 없을 수도 있습니다. 그럴 땐, 직접 운영체제에 맞는 패키지를 다운로드해서 이를 설치해주어야 합니다. 필자의 경우, `wsl` 을 이용해서 `kali-linux` 를 구축했는데, 기본 패키지로는 `dotnet-sdk`를 설치할 수 없었습니다.
+> 
+> `kali-linux`의 경우 다음 명령어를 추가적으로 입력해서 `dotnet-sdk`를 설치할 수 있었습니다.
+> ```
+> wget https://packages.microsoft.com/config/debian/10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+> sudo dpkg -i packages-microsoft-prod.deb
+> sudo apt update
+> sudo apt install dotnet-sdk-9.0
+> ```
+
+### Visual Studio Code(VS Code) 설치 및 설정
 
 **VS Code**는 가벼운 코드 편집기로, C# 개발을 지원하는 확장 기능을 설치하면 더욱 편리하게 사용할 수 있습니다.
 
 #### 설치 방법 (모든 OS 공통)
 
-8. [VS Code 공식 사이트](https://code.visualstudio.com/)에서 설치 파일을 다운로드합니다.
+1.  [VS Code 공식 사이트](https://code.visualstudio.com/)에서 설치 파일을 다운로드합니다.
     
-9. 설치 후, 실행하여 **Extensions(확장 프로그램)** 탭에서 `C#` 확장을 검색하고 설치합니다.
+2. 설치 후, 실행하여 **Extensions(확장 프로그램)** 탭에서 `C#` 확장을 검색하고 설치합니다.
     
-10. 터미널에서 다음 명령어를 입력하여 올바르게 설치되었는지 확인합니다:
+3. 터미널에서 다음 명령어를 입력하여 올바르게 설치되었는지 확인합니다:
     
     ```
     code --version
@@ -129,49 +136,47 @@ IDE로 젯브레인 사에 Rider가 있지만, 이 문서에서는 **Visual Stud
 
 ### 프로젝트 생성
 
-11. 터미널을 열고 원하는 폴더에서 다음 명령어를 입력하여 새 C# 콘솔 애플리케이션을 생성합니다:
+이제 저희의 첫 번째 프로젝트를 한 번 만들어보겠습니다. 터미널을 열고 원하는 폴더에서 다음 명령어를 입력하여 새 C# 콘솔 애플리케이션을 생성합니다:
     
-    ```
-    dotnet new console -o HelloWorld
-    ```
-    
-12. 생성된 폴더로 이동합니다:
-    
-    ```
-    cd HelloWorld
-    ```
-    
-13. `Program.cs` 파일을 열어 기본 코드 구조를 확인합니다.
-    
-
-### 코드 작성
-
-`Program.cs` 파일을 열어 다음과 같이 수정합니다:
-
 ```
-using System;
+dotnet new console -o HelloWorld --use-program-main
+```
+    
 
+생성된 폴더로 이동합니다:
+    
+```
+cd HelloWorld
+```
+    
+`Program.cs` 파일을 열어 기본 코드 구조를 확인합니다.
+
+```csharp
+namespace HelloWorld;
+
+  
 class Program
 {
-    static void Main()
-    {
-        Console.WriteLine("Hello, World!");
-    }
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Hello, World!");
+
+    }
 }
 ```
 
 ### 프로그램 실행
 
-터미널에서 다음 명령어를 실행하여 프로그램을 실행해 봅니다:
+터미널에서 다음 명령어를 실행하여 프로그램을 실행해 봅니다.
 
 ```
 dotnet run
 ```
 
-출력 결과:
+명령어를 실행하면, 다음과 같은 문구가 출력되는 것을 확인할 수 있습니다.
 
 ```
 Hello, World!
 ```
 
-이제 C# 개발 환경을 성공적으로 설정하고 첫 번째 프로그램을 실행했습니다! 다음 장에서는 보다 실용적인 프로그램을 만들어 보겠습니다.
+이제 C# 개발 환경을 성공적으로 설정하고 첫 번째 프로그램을 실행했습니다! 다음 장에서는 우리가 만든 Hello World 프로그램을 분석해보는 시간을 가져보겠습니다.
